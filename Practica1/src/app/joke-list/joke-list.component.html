@@ -1,0 +1,4 @@
+<joke-form (bromaCreada)="addNewJoke($event)"></joke-form>
+
+
+<joke-item *ngFor="let joke of array; let index = index" [joke]="joke" [id]="index" (jokeRemoved)="deleteJoke(index)"></joke-item>
